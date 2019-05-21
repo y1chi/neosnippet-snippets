@@ -22,11 +22,11 @@ abbr enum {}
 snippet var
     ${1:#:type} ${2:#:var}${3};
 
-snippet const
-    static public final ${1:#:type} ${2:#:var} = ${3};${4}
+snippet psf
+    public static final ${1:#:type} ${2:#:var} = ${3};${4}
 
-snippet const_string
-    static public final String ${1:var} = "${2}";${4}
+snippet psfs
+    public static final String ${1:var} = "${2}";${4}
 
 snippet final
     public final ${1:#:type} ${2:#:var} = ${3};
@@ -242,7 +242,7 @@ alias ver
 snippet     helloworld
 options     head
   public class ${1:Hello} {
-    static public void main(String args[]) {
+    public static void main(String args[]) {
       System.out.println("Hello, world!");
     }
   }
